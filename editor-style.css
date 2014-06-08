@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+.mceContentBody {
+	font: 15px/24px 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#555;
+}
+
+.mceContentBody h1, .mceContentBody h2, .mceContentBody h3, .mceContentBody h4, .mceContentBody h5, .mceContentBody h6 {
+    margin: 0 0 25px 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.mceContentBody h1 { 
+	font-size: 34px;
+	line-height: 40px;
+}
+
+.mceContentBody h2 { 
+	font-size: 28px;
+	line-height: 32px;
+ }
+
+.mceContentBody h3 { 
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.mceContentBody h4 { 
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.mceContentBody h5 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.mceContentBody h6 { 
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.mceContentBody p {
+	font: 15px/24px 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	margin: 0 0 25px;
+	color:#555;
+}
+
+.mceContentBody blockquote {
+    background: #f7f7f7;
+	padding: 75px 30px 1px 60px;	
+	margin: 0 0 30px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mceContentBody blockquote p {
+	font-family: 'Abel', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	text-align: right;
+	color: #aaa;
+}
+
+.mceContentBody ul {
+	margin: 0 0 30px 18px;
+	padding: 0;
+}
+
+.mceContentBody li {
+	list-style-type: square;
+	margin: 0 0 8px 0;
+}
+
+.mceContentBody ol {
+	margin: 0 0 30px 22px;
+	padding: 0;
+}
+.mceContentBody ol li {
+	list-style-type: decimal;
+}
+
+.intro {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #aaa;
+	margin: 0 0 12px 0;
+	padding: 0 0 12px 0;
+	border-bottom: solid 1px #eee;
+}
+
+.highlight {
+	background: #fff198;
+	color: #222;
+}
+
+hr {
+	margin: 40px 0 30px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    height: 1px;
+}
+
+.alignright {
+	margin: 5px 0 30px 30px;
+}
+
+.alignleft {
+	margin: 5px 30px 30px 0;
+}

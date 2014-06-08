@@ -1,0 +1,148 @@
+/**
+ * theme name : business plus
+ * custom style for extra post meta fields
+ */
+
+.drop_meta_container {
+	width: 90%;
+	padding: 5%;
+	clear: both;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-top: 10px;
+	background: #fff;
+	margin-right: -20%;
+}
+
+.drop_meta_item {
+	margin-bottom: 40px;
+	width: 100%;
+	clear: both;
+	float: left;
+	border-bottom: 1px solid #F0F0F0;
+	padding-bottom: 20px;
+
+}
+
+.drop_meta_item:last-child {
+	margin-bottom: 0px;
+}
+
+
+.drop_meta_item label {
+	clear: both;
+	float: left;
+	font-size: 16px;
+	
+	
+	
+	
+}
+
+.drop_meta_item.gallery label  {
+	margin-bottom: 20px;
+}
+
+.drop_meta_item input[type=text] , .drop_meta_item textarea
+{
+	
+	width: 69%;
+	float: left;
+	min-height: 30px;
+
+}
+.drop_meta_item textarea {
+	min-height: 120px;
+}
+
+.drop_meta_item .inner_meta
+{
+	clear: none;
+}
+.drop_meta_item .inner_meta select
+{
+	clear: both;
+	width: 70%;
+	border: 1px solid #E4E4E4;
+	float: left;
+	height: 30px;
+}
+.drop_meta_item .meta_description {
+	float: right;
+	clear: both;
+	max-width: 70%;
+}
+.drop_meta_item.gallery .meta_description, .drop_meta_item.fullwidth .meta_description {
+	max-width: none;
+} 
+.drop_meta_item .meta_description p {
+	color: #959595;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+
+
+
+
+/* the gallery */
+.drop_meta_item .images-container {
+	float: left;
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.drop_meta_item .dsf_media_uploader_button {
+	float: left;
+	clear: both;
+	
+	cursor: pointer;
+}
+
+
+.drop_meta_item .images-container .single-image {
+	position: relative;
+	float: left;
+	border: 10px solid #fff;
+	box-shadow: 0px 0px 7px #D2D2D2;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.drop_meta_item   .media_field_content {
+	display: none;
+}
+
+.drop_meta_item .images-container .single-image span.delete {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: none;
+	cursor: pointer;
+	z-index: 1;
+	color: #555555;
+	float: right;
+	font-size: 14px;
+	font-family: Tahoma , sans-serif;
+	background: #fff;
+	padding: 7px 12px;
+	font-weight: bold;
+}
+
+.drop_meta_item .images-container .single-image:hover span.delete {
+	display: block;
+}
+
+.drop_meta_item .images-container .single-image img {
+	float: left;
+	clear: both;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
