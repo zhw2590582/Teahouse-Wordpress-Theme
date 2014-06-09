@@ -1,4 +1,4 @@
-wordpress_teahouse
+Teahouse Responsive Portfolio Theme
 ==================
 # [demo](http://www.zhw-island.com/)
 
