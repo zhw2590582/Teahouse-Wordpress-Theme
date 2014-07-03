@@ -1,18 +1,5 @@
 jQuery(document).ready(function($) {
 
-    //typeString
-    $('.logo-subtitle').css('display', 'none');
-    $('.logo-subtitle').after("<h2><span class='typed'></span><span class='cursor'></span></h2>");
-    $('.typed').teletype({
-        text: [$('.logo-subtitle').text()]
-    });
-
-    $('.cursor').teletype({
-        text: ['|', ' '],
-        delay: 0,
-        pause: 500
-    });
-
     //Weibo iframe
     if ($("#my-sidebar .share_self").length > 0) {
 
