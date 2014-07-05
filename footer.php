@@ -9,7 +9,7 @@
 	    </div>
 	</div>
 	<?php } ?>
-	<div class="copyright">&copy; <?php echo date("Y"); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a> | <?php bloginfo('description'); ?></div>
+	<div class="copyright">&copy; <?php echo date("Y"); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a> | <?php bloginfo('description'); ?> | <a href="http://zhw-island.com/">Theme by <strong>Teahouse</strong></a></div>
 	</div>
 		
 	<?php if ( is_active_sidebar(3) ) { ?>
