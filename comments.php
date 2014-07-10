@@ -26,28 +26,28 @@
 $args =  array(
 'comment_field'=> '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label>
 <br/>
-<a href="javascript:grin(\':?:\')"      ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_question.gif"  alt="" /></a>
-<a href="javascript:grin(\':razz:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_razz.gif"      alt="" /></a>
-<a href="javascript:grin(\':sad:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_sad.gif"       alt="" /></a>
-<a href="javascript:grin(\':evil:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_evil.gif"      alt="" /></a>
-<a href="javascript:grin(\':!:\')"      ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_exclaim.gif"   alt="" /></a>
-<a href="javascript:grin(\':smile:\')"  ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_smile.gif"     alt="" /></a>
-<a href="javascript:grin(\':oops:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_redface.gif"   alt="" /></a>
-<a href="javascript:grin(\':grin:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_biggrin.gif"   alt="" /></a>
-<a href="javascript:grin(\':eek:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_surprised.gif" alt="" /></a>
-<a href="javascript:grin(\':shock:\')"  ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_eek.gif"       alt="" /></a>
-<a href="javascript:grin(\':???:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_confused.gif"  alt="" /></a>
-<a href="javascript:grin(\':cool:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_cool.gif"      alt="" /></a>
-<a href="javascript:grin(\':lol:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_lol.gif"       alt="" /></a>
-<a href="javascript:grin(\':mad:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_mad.gif"       alt="" /></a>
-<a href="javascript:grin(\':twisted:\')"><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_twisted.gif"   alt="" /></a>
-<a href="javascript:grin(\':roll:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_rolleyes.gif"  alt="" /></a>
-<a href="javascript:grin(\':wink:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_wink.gif"      alt="" /></a>
-<a href="javascript:grin(\':idea:\')"   ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_idea.gif"      alt="" /></a>
-<a href="javascript:grin(\':arrow:\')"  ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_arrow.gif"     alt="" /></a>
-<a href="javascript:grin(\':neutral:\')"><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_neutral.gif"   alt="" /></a>
-<a href="javascript:grin(\':cry:\')"    ><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_cry.gif"       alt="" /></a>
-<a href="javascript:grin(\':mrgreen:\')"><img src="'.get_option('home').'/wp-content/themes/teahouse/smilies/icon_mrgreen.gif"   alt="" /></a>
+<a href="javascript:grin(\':?:\')"      ><img src="'.get_template_directory_uri().'/smilies/icon_question.gif"  alt="" /></a>
+<a href="javascript:grin(\':razz:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_razz.gif"      alt="" /></a>
+<a href="javascript:grin(\':sad:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_sad.gif"       alt="" /></a>
+<a href="javascript:grin(\':evil:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_evil.gif"      alt="" /></a>
+<a href="javascript:grin(\':!:\')"      ><img src="'.get_template_directory_uri().'/smilies/icon_exclaim.gif"   alt="" /></a>
+<a href="javascript:grin(\':smile:\')"  ><img src="'.get_template_directory_uri().'/smilies/icon_smile.gif"     alt="" /></a>
+<a href="javascript:grin(\':oops:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_redface.gif"   alt="" /></a>
+<a href="javascript:grin(\':grin:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_biggrin.gif"   alt="" /></a>
+<a href="javascript:grin(\':eek:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_surprised.gif" alt="" /></a>
+<a href="javascript:grin(\':shock:\')"  ><img src="'.get_template_directory_uri().'/smilies/icon_eek.gif"       alt="" /></a>
+<a href="javascript:grin(\':???:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_confused.gif"  alt="" /></a>
+<a href="javascript:grin(\':cool:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_cool.gif"      alt="" /></a>
+<a href="javascript:grin(\':lol:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_lol.gif"       alt="" /></a>
+<a href="javascript:grin(\':mad:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_mad.gif"       alt="" /></a>
+<a href="javascript:grin(\':twisted:\')"><img src="'.get_template_directory_uri().'/smilies/icon_twisted.gif"   alt="" /></a>
+<a href="javascript:grin(\':roll:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_rolleyes.gif"  alt="" /></a>
+<a href="javascript:grin(\':wink:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_wink.gif"      alt="" /></a>
+<a href="javascript:grin(\':idea:\')"   ><img src="'.get_template_directory_uri().'/smilies/icon_idea.gif"      alt="" /></a>
+<a href="javascript:grin(\':arrow:\')"  ><img src="'.get_template_directory_uri().'/smilies/icon_arrow.gif"     alt="" /></a>
+<a href="javascript:grin(\':neutral:\')"><img src="'.get_template_directory_uri().'/smilies/icon_neutral.gif"   alt="" /></a>
+<a href="javascript:grin(\':cry:\')"    ><img src="'.get_template_directory_uri().'/smilies/icon_cry.gif"       alt="" /></a>
+<a href="javascript:grin(\':mrgreen:\')"><img src="'.get_template_directory_uri().'/smilies/icon_mrgreen.gif"   alt="" /></a>
 <br/>
 <textarea id="comment" name="comment" cols="45" rows="8"></textarea></p>',
 'label_submit'=> '确 认 提 交 / Ctrl + Enter',
