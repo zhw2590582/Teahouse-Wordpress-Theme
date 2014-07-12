@@ -96,5 +96,5 @@
 		</nav>
 	</header>
 	<div id="sb-site" class="sb-slide">
-	<div class="wrapper">
+	<div class="wrapper <?php if ( is_active_sidebar(2) ) { ?>toggle-wrapper<?php } ?> ">
 		<div id="main">

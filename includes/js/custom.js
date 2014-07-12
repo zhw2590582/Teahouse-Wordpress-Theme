@@ -11,28 +11,6 @@ jQuery(document).ready(function($) {
 			$(".ps-scrollbar-y-rail").css("left", "3px");
 	}
 
-    //#my-widget
-    if ($("#my-widget").length > 0) {
-
-        // toggle button
-        jQuery('a#toggleSidebar').on('click',
-        function() {
-            // if sidebar hidden , show it
-            if ($('#my-widget').is(':visible')) {
-                $(".wrapper").addClass("toggle-wrapper");
-                $("#my-widget").css("display", "none");
-            } else {
-                $(".wrapper").removeClass("toggle-wrapper");
-                jQuery('#my-widget').fadeIn();
-            }
-
-            return false;
-        });
-
-    } else {
-        $(".wrapper").addClass("toggle-wrapper");
-    }
-
     //My-nav tooltip
     $(".my-nav a").each(function(i) {
         var formattedDate = $(this).attr('title');
