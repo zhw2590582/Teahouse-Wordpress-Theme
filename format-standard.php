@@ -3,10 +3,9 @@
 					
 					<div class="post-image audio post-format-audio">
 						<!-- grab the featured image -->
-						
 					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
-							<a class="featured-image" href="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail( 'large-image' ); ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">					
 							</a>
 					<?php } else { ?>
 						<?php if ( has_post_thumbnail() ) { ?>
@@ -28,8 +27,8 @@
 					
 						<!-- grab the featured image -->
 					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
-							<a class="featured-image" href="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail( 'large-image' ); ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">				
 							</a>
 					<?php } else { ?>
 						<?php if ( has_post_thumbnail() ) { ?>
