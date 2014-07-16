@@ -14,9 +14,46 @@ Template Name: Custom Comment
 				
 				<article <?php post_class('post'); ?>>
 
-					<!-- grab the featured image -->
-					<?php if ( has_post_thumbnail() ) { ?>
-						<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'large-image' ); ?></a>
+					<!-- grab the music -->
+					<?php if ( get_post_meta($post->ID, 'music', true) ) { ?>
+					
+					<div class="post-image audio post-format-audio">
+						<!-- grab the featured image -->
+					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">					
+							</a>
+					<?php } else { ?>
+						<?php if ( has_post_thumbnail() ) { ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php the_post_thumbnail( 'large-image' ); ?>
+							</a>
+						<?php } ?>
+					<?php } ?>
+						
+						<div class="audio-wrapper">
+							<div class="me-wrap">
+							<audio class="wp-audio-shortcode" preload="none" style="width: 100%">
+							<source type="audio/mpeg" src="<?php echo get_post_meta( $post->ID, 'music', true ); ?>">
+							</audio>
+							</div>
+						</div>						
+					</div>
+					<?php } else { ?>
+					
+						<!-- grab the featured image -->
+					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">				
+							</a>
+					<?php } else { ?>
+						<?php if ( has_post_thumbnail() ) { ?>
+							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php the_post_thumbnail( 'large-image' ); ?>
+							</a>
+						<?php } ?>
+					<?php } ?>
+					
 					<?php } ?>
 					
 					<div class="box-wrap">
