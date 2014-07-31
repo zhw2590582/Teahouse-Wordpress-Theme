@@ -22,15 +22,13 @@
 
 				<!-- grab the posts -->
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-				<?php if ( is_sticky() ) : ?>
-  
-				<div class="my-sticky"></div>
-
-				<?php else : ?>
-				<?php endif; ?>				
+			
 				
 				<article <?php post_class( 'post' ); ?>>
+				<?php if ( is_sticky() ) : ?>
+				<div class="my-sticky"></div>
+				<?php else : ?>
+				<?php endif; ?>	
 					<!-- grab the post format template -->
 					<?php
 						if( 'gallery' == get_post_format() ) {
