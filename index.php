@@ -23,6 +23,13 @@
 				<!-- grab the posts -->
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+				<?php if ( is_sticky() ) : ?>
+  
+				<div class="my-sticky"></div>
+
+				<?php else : ?>
+				<?php endif; ?>				
+				
 				<article <?php post_class( 'post' ); ?>>
 					<!-- grab the post format template -->
 					<?php
