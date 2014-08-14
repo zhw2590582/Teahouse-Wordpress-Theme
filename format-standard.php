@@ -75,6 +75,7 @@
 								<ul class="meta">
 									<li class="post-category"><i class="icon-list-ul"></i><?php the_category(' '); ?></li>
 									<ul class="my-meta">
+									<li class="post-view"><i class="icon-eye-open"></i><?php echo getPostViews(get_the_ID()); ?></li>
 									<li class="post-comments"><i class="icon-comments "></i><a href="<?php the_permalink(); ?>#comments-title" title="comments"><?php comments_number(__('0','teahouse'),__('1','teahouse'),__( '%','teahouse') );?></a></li>
 									<?php
 										if ( function_exists('zilla_likes')) {

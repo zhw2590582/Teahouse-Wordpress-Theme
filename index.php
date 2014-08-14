@@ -41,6 +41,7 @@
 							get_template_part( 'format', 'standard' );
 						}
 					?>
+				<?php setPostViews(get_the_ID()); ?>
 				</article><!-- post-->
 				<article class="arrow"></article>
 				<?php endwhile; ?>

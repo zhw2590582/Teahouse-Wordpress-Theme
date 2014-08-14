@@ -214,6 +214,31 @@ function mytheme_comment($comment, $args, $depth) {
  }
  add_action('save_post', 'clear_zal_cache'); // 新发表文章/修改文章时
  
+ 
+  //文章点击次数
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0";
+    }
+    return $count.' ';
+}
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+ 
  //判断是否属手机
 function is_mobile() {
 	$user_agent = $_SERVER['HTTP_USER_AGENT'];
