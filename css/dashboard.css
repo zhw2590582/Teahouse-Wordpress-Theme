@@ -1,0 +1,125 @@
+/*验证密钥 */
+.verify_bg {
+	position: relative;
+	width: 397px;
+	height: 599px;
+	margin: 0 auto;
+	background: url(../images/verify_bg.png) no-repeat;
+}
+
+.verify_serve {
+	text-align: center;
+	border-radius: 5px;
+	margin: 10px 50px;
+	padding: 5px;
+	color: #575138;
+	border: 1px solid #eac946;
+	background: #fff4b9;
+}
+
+.verify_state {
+	width: 72px;
+	height: 72px;
+	position: absolute;
+	top: 29px;
+	left: 50%;
+	margin-left: -36px;
+}
+
+.verify_help {
+	position: absolute;
+	top: 15px;
+	display: block;
+	overflow: hidden;
+	right: 29px;
+	width: 25px;
+	height: 25px;
+}
+
+.verify_info {
+	position: absolute;
+	width: 100%;
+	top: 130px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.verify_yes {
+	background: url(../images/verify_yes.png) no-repeat;
+}
+
+.verify_no {
+	background: url(../images/verify_no.png) no-repeat;
+}
+
+.verify_form {
+	position: absolute;
+	width: 100%;
+	top: 223px;
+}
+
+#Island_license_key {
+	height: 33px;
+	padding-top: 13px;
+	margin-left: 100px;
+	width: 240px;
+	font-size: 20px;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.verify_list {
+	margin-top: 28px;
+	margin-left: 85px;
+	font-size: 18px;
+}
+
+.verify_list li {
+	padding-bottom: 15px;
+}
+
+.verify_form .button-primary {
+	font-size: 24px;
+	height: 50px;
+	width: 310px;
+	margin: 10px auto 0;
+	display: block;
+}
+
+.verify_form .button {
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	margin-top: 24px;
+	color: #800000;
+	margin-left: -35px;
+	width: 70px;
+	background: none;
+	box-shadow: none;
+	border: none;
+}
+
+.verify_form .button:active , .verify_form .button:hover ,.verify_form .button:focus {
+	background: none;
+	box-shadow: none;
+	border: none;
+}
+
+#wp-admin-bar-mpanel_verify a {
+	background: #B60404;
+}
+
+#wp-admin-bar-mpanel_verify a:before {
+	content: "\f084";
+	font-family: FontAwesome ! important;
+	padding-top: 9px ! important;
+	margin-right: 10px;
+	color: #fff ! important;
+	font-size: 14px ! important;
+}
+
+#the-comment-list .avatar{
+	width:50px ! important;
+	height:50px ! important;
+}

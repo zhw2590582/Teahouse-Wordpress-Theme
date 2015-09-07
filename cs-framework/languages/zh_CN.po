@@ -1,0 +1,170 @@
+# Copyright (C) 2015 Codestar
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Codestar Framework 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/cs-framework\n"
+"POT-Creation-Date: 2015-02-20 13:30:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-03-14 20:43+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.6.9\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh\n"
+
+#: classes/framework.class.php:333
+msgid "Settings saved."
+msgstr "保存成功"
+
+#: classes/framework.class.php:334
+msgid "Save"
+msgstr "保存"
+
+#: classes/framework.class.php:334
+msgid "Saving..."
+msgstr "保存中..."
+
+#: classes/framework.class.php:335
+msgid "Restore"
+msgstr "还原"
+
+#: classes/framework.class.php:337
+msgid "show all options"
+msgstr "显示所有选项"
+
+#: classes/options.class.php:123
+msgid "CONFIG"
+msgstr "配置"
+
+#: classes/options.class.php:129
+msgid "USAGE"
+msgstr "用法"
+
+#: classes/options.class.php:198
+msgid "You are editing language: ( <strong>%s</strong> )"
+msgstr "你当前编辑的语言为: ( <strong>%s</strong> )"
+
+#: classes/shortcode.class.php:82 classes/shortcode.class.php:90
+#: fields/textarea/textarea.php:27
+msgid "Add Shortcode"
+msgstr "添加短代码"
+
+#: classes/shortcode.class.php:92
+msgid "Select a shortcode"
+msgstr "选择一个段代码"
+
+#: classes/shortcode.class.php:108
+msgid "Insert Shortcode"
+msgstr "插入短代码"
+
+#: fields/background/background.php:31 fields/background/background.php:32
+#: fields/upload/upload.php:23 fields/upload/upload.php:24
+msgid "Upload"
+msgstr "上传"
+
+#: fields/background/background.php:33 fields/upload/upload.php:25
+msgid "Use Image"
+msgstr "使用图像"
+
+#: fields/backup/backup.php:21
+msgid "Import a Backup"
+msgstr "导入备份"
+
+#: fields/backup/backup.php:22
+msgid "copy-paste your backup string here"
+msgstr "复制粘贴你的备份字段到这里"
+
+#: fields/backup/backup.php:27
+msgid "Export and Download Backup"
+msgstr "导出和下载备份"
+
+#: fields/backup/backup.php:28
+msgid "or"
+msgstr "或者"
+
+#: fields/backup/backup.php:29
+msgid "!!! Reset All Options !!!"
+msgstr "!!! 重置所有选项 !!!"
+
+#: fields/backup/backup.php:30
+msgid "Please be sure for reset all of framework options."
+msgstr "请确认重置所有框架选项"
+
+#: fields/gallery/gallery.php:21
+msgid "Add Gallery"
+msgstr "添加画廊"
+
+#: fields/gallery/gallery.php:22
+msgid "Edit Gallery"
+msgstr "编辑画廊"
+
+#: fields/gallery/gallery.php:23
+msgid "Clear"
+msgstr "清楚"
+
+#: fields/group/group.php:21
+msgid "Adding"
+msgstr "增加"
+
+#: fields/group/group.php:33 fields/group/group.php:65
+msgid "Remove"
+msgstr "移除"
+
+#: fields/icon/icon.php:25 functions/actions.php:47
+msgid "Add Icon"
+msgstr "添加图标"
+
+#: fields/icon/icon.php:26
+msgid "Remove Icon"
+msgstr "移除图标"
+
+#: fields/image/image.php:22
+msgid "Add Image"
+msgstr "增加图像"
+
+#: fields/sorter/sorter.php:24
+msgid "Enabled Modules"
+msgstr "启用模块"
+
+#: fields/sorter/sorter.php:25
+msgid "Disabled Modules"
+msgstr "取消模块"
+
+#: fields/switcher/switcher.php:20
+msgid "on"
+msgstr "开启"
+
+#: fields/switcher/switcher.php:20
+msgid "off"
+msgstr "关闭"
+
+#: fields/typography/typography.php:65
+msgid "Error! Can not load json file."
+msgstr "错误！不能加载json文件"
+
+#: functions/actions.php:48
+msgid "Search a Icon..."
+msgstr "查找一个图标"
+
+#: functions/actions.php:49
+msgid "Loading..."
+msgstr "加载中..."
+
+#: functions/helpers.php:51
+msgid "This field class is not available!"
+msgstr "此字段不可用"
+
+#: functions/validate.php:14
+msgid "Please write a valid email address!"
+msgstr "请填写一个有效邮箱地址"
+
+#: functions/validate.php:33
+msgid "Please write a numeric data!"
+msgstr "请填写一个数字"
+
+#: functions/validate.php:51
+msgid "Fatal Error! This field is required!"
+msgstr "错误！这是必填栏！"

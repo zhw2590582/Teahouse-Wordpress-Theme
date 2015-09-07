@@ -1,92 +1,70 @@
-					<!-- grab the music -->
-					<?php if ( get_post_meta($post->ID, 'music', true) ) { ?>
-					
-					<div class="post-image audio post-format-audio">
-						<!-- grab the featured image -->
-					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
-							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">					
-							</a>
-					<?php } else { ?>
-						<?php if ( has_post_thumbnail() ) { ?>
-							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail( 'large-image' ); ?>
-							</a>
-						<?php } ?>
+<?php
+// 获取选项
+$excerpt = cs_get_option( 'i_post_readmore' ); 
+$qrcodes = cs_get_option( 'i_code_qrcodes' ); 
+$qrcodes_img = cs_get_option( 'i_qrcodes_img' ); 
+$font = cs_get_option( 'i_post_font' );
+$view = cs_get_option( 'i_post_view' );
+$featured = cs_get_option( 'i_post_featured' );
+$author = cs_get_option( 'i_post_author' );
+?> 		
+	<!-- 标准 -->
+	
+	<div class="box-wrap">
+		<div class="box">
+		<?php if(!is_single() || $featured == true) { ?>
+			<?php if ( has_post_thumbnail()) { ?>
+				<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'large-image' ); ?></a>
+			<?php } ?>	
+		<?php } ?>		
+			<div class="post-content">
+				<header>
+					<?php if(is_single() || is_page()) { ?>
+						<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+					<?php } else { ?>					
+						<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 					<?php } ?>
-						
-						<div class="audio-wrapper">
-							<div class="me-wrap">
-							<audio class="wp-audio-shortcode" preload="none" style="width: 100%">
-							<source type="audio/mpeg" src="<?php echo get_post_meta( $post->ID, 'music', true ); ?>">
-							</audio>
-							</div>
-						</div>						
+				
+					<?php if(is_page()) { ?>
+					<ul class="top_meta"></ul>
+					<?php } else { ?>
+					<ul class="top_meta">
+						<li class="mate-cat"><i class="fa fa-folder-open-o"></i><?php the_category(' '); ?></li>
+						<li class="mate-time"><i class="fa fa-clock-o"></i><?php echo '发表于 '.timeago( get_gmt_from_date(get_the_time('Y-m-d G:i:s')) ); ?></li>
+						<?php if ($view == true) { ?>
+						<li class="mate-view"><i class="fa fa-eye"></i><?php echo getPostViews(get_the_ID()); ?>次浏览</li>
+						<?php } ?>
+						<li class="mate-com"><i class="fa fa-comments-o"></i><a href="<?php the_permalink(); ?>#comments-title" title="comments"><?php comments_number(__('暂无评论','island'),__('1条评论','island'),__( '%条评论','island') );?></a></li>
+						<?php if ($author == true) { ?>
+						<li class="mate-author"><i class="fa fa-eye"></i><?php the_author_posts_link(); ?></li>
+						<?php } ?>						
+						<li><?php edit_post_link( __( '<i class="fa fa-edit"></i>编辑', 'island' ), '<div class="edit-link" alt="编辑文章"  title="编辑文章">', '</div>' ); ?></li>
+						<div class="clearfix"></div>
+					</ul>				
+					<?php } ?>			
+				</header>
+				
+				<div class="content">
+				<?php if(is_search() || is_archive()) { ?>
+					<div class="excerpt-more">
+						<?php the_excerpt(__( 'Read More','island')); ?>
 					</div>
-					<?php } else { ?>
+				<?php } else { ?>
+						
+					<?php if(is_home()) { ?>
+						<?php if ($excerpt == true) {
+							the_excerpt(__( 'Read More','island'));
+						}else{
+							the_content(__( 'Read More','island'));
+						}?>										
+					<?php } else { ?>	
+						<?php the_content(__( 'Read More','island')); ?>
+					<?php } ?>			
 					
-						<!-- grab the featured image -->
-					<?php if ( get_post_meta($post->ID, 'picture', true) ) { ?>
-							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<img src="<?php echo get_post_meta( $post->ID, 'picture', true ); ?>" class="attachment-large-image wp-post-image">				
-							</a>
-					<?php } else { ?>
-						<?php if ( has_post_thumbnail() ) { ?>
-							<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail( 'large-image' ); ?>
-							</a>
-						<?php } ?>
-					<?php } ?>
-					
-					<?php } ?>
-					
-					<div class="box-wrap">
-						<div class="box">
-							<!-- post content -->
-							<div class="post-content">
-								<header>
-									<?php if(is_single() || is_page()) { ?>
-										<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-									<?php } else { ?>					
-										<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-									<?php } ?>
-								</header>
-								<div class="date-title">
-								<div class="date-year"><?php echo get_the_date('d | m | Y'); ?></div>
-								</div>
-								<div class="my-post">
-								<?php if(is_search() || is_archive()) { ?>
-									<div class="excerpt-more">
-										<?php the_excerpt(__( 'Read More','teahouse')); ?>
-									</div>
-								<?php } else { ?>
-									<?php the_content(__( 'Read More','teahouse')); ?>
-									
-									<?php if(is_single() || is_page()) { ?>
-										<div class="pagelink">
-											<?php wp_link_pages(); ?>
-										</div>
-									<?php } ?>
-								<?php } ?>
-								</div>
-							</div><!-- post content -->
-							
-							<?php if(is_page()) {} else { ?>
-								<ul class="meta">
-									<li class="post-category"><i class="icon-list-ul"></i><?php the_category(' '); ?></li>
-									<ul class="my-meta">
-									<li class="post-view"><i class="icon-eye-open"></i><?php echo getPostViews(get_the_ID()); ?></li>
-									<li class="post-comments"><i class="icon-comments "></i><a href="<?php the_permalink(); ?>#comments-title" title="comments"><?php comments_number(__('0','teahouse'),__('1','teahouse'),__( '%','teahouse') );?></a></li>
-									<?php
-										if ( function_exists('zilla_likes')) {
-										echo '<li class="likes-botton">'.PHP_EOL;
-										zilla_likes();
-										echo '</li>'.PHP_EOL;
-										} 
-									?>		
-									</ul>
-								</ul>
-							<?php } ?>
-							
-						</div><!-- box -->
-					</div><!-- box wrap -->
+				<?php } ?>	
+
+				<?php wp_link_pages('before=<div class="article-nav">&after=</div>&next_or_number=next&previouspagelink=上一页&nextpagelink=下一页'); ?> 										
+				
+				</div>
+			</div><!-- post content -->	
+			
