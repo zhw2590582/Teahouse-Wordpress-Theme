@@ -20,6 +20,7 @@ if( !class_exists('WPUpdatesThemeUpdater_915') ) {
         function __construct( $api_url, $theme_slug, $license_key = null ) {
     		$this->api_url = $api_url;
     		$this->theme_slug = $theme_slug;
+	        $this->license_key = $license_key;
     
     		add_filter( 'pre_set_site_transient_update_themes', array(&$this, 'check_for_update') );
     		
@@ -65,5 +66,3 @@ if( !class_exists('WPUpdatesThemeUpdater_915') ) {
 
     }
 }
-
-?>
