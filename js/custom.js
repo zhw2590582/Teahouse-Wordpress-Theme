@@ -143,6 +143,9 @@ $('body').on('click', '#comment-nav-below a', function(e) {
 		
 	var rh = $('.rightbar').height();
 	var bh = $('#main').height();	
+	$("#wrapper").css("min-height", rh + 100 );
+
+	
 	
 	if($(".rightbar").length>0 && bh > rh ){
 		var documentHeight = 0;

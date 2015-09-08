@@ -199,6 +199,10 @@ header .log-in-out .login-links {
 	color:#FFF7EE;
 }
 
+.header-menu .header-menu-wrapper > ul > li > a:hover , .header-menu .current-menu-item > a{
+	background-color:#252525;
+}
+
 .header-menu-wrapper > .header-menu-list > .current-menu-item  , .header-menu .header-menu-wrapper > ul > li:hover {
 }
 

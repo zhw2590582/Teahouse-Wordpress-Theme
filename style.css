@@ -1,10 +1,10 @@
 /*
 Theme Name: Teahouse
 Theme URI: http://Lazyhood.com/
-Description: Teahouse 是一款个性的博客主题
+Description: Teahouse 是一款个性的博客主题.
 Author: 老赵
 Author URI: http://Lazyhood.com/
-Version: 2.2.5
+Version: 2.2.6
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -616,6 +616,7 @@ a:focus {
 }
 
 .logo {
+	max-height:150px;
 	display: block;
 	text-indent: -9999px;
 	margin: 0;
@@ -739,6 +740,7 @@ a:focus {
 }
 
 .header-menu .header-menu-wrapper > ul > li {
+	margin-bottom:10px;
 	display: block;
 	position: relative;
 }
@@ -751,10 +753,11 @@ a:focus {
 
 .header-menu .header-menu-wrapper > ul > li > a {
 	font-family: 'Microsoft Yahei';
+	line-height: 1;
 	display: inline-flex;
 	font-size: 15px;
-	height: 35px;
-	line-height: 35px;
+	padding: 5px 10px;
+	border-radius: 5px;
 	-webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
@@ -2127,6 +2130,7 @@ h3.related_title {
 .lfixed {
 	position: fixed ! important;
 	top: 20px ! important;
+	max-width:17.7%;
 }
 
 .left_menu {
@@ -2205,8 +2209,9 @@ h3.related_title {
 }
 
 .rightbar {
+	position:absolute;
+	right:0;
 	display: inline-block;
-	position: relative;
 	float: right;
 	padding: 30px 10px 0 25px;
 	margin-left: -100%;
@@ -2505,8 +2510,9 @@ h3.related_title {
 }
 
 #comment-list li {
+	position:relative;
 	width:100%;
-	height: 40px;
+	height: 42px;
 	display: inline-block;
 	border-bottom: dashed 1px #888888;
 	margin-bottom: 0
@@ -2521,6 +2527,7 @@ h3.related_title {
 
 #comment-list .avatar {
 	position:absolute;
+	left:0;
 	float: left;
 	width: 32px;
 	height: 32px;
@@ -2569,6 +2576,8 @@ h3.related_title {
 
 .rightbar .wp-smiley{
 	zoom:0.8;
+	-moz-transform:scale(0.8);
+　　-moz-transform-origin:top left;
 }
 
 /* ===[ 文章 ]=== */
@@ -2983,6 +2992,7 @@ i.cut-icon {
 
 .home .format-aside .featured-image , .archive .format-aside .featured-image, .search .format-aside .featured-image {
 	position:absolute;
+	left:0;
 	z-index: 100;	
 	float: left;
 	width: 130px !important;
@@ -5183,6 +5193,7 @@ input.disabled{
 	}
 
 	.header {
+		z-index:999999;
 		width:100%;
 		text-align:left;
 		padding: 0 10px;
