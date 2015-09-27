@@ -718,7 +718,8 @@ a:focus {
 }
 
 .logo-text a {
-	font-size: 28px;
+	font-size: 40px;
+	font-family:"MyKXFonts";
 	height: 50px;
 	line-height: 50px;
 	-webkit-transition: .1s ease-in;
@@ -2285,7 +2286,6 @@ h3.related_title {
 
 .social_link:before {
 	content: '';
-	height: 7px;
 	position: absolute;
 	z-index: 0;
 	top: -5px;
@@ -2333,6 +2333,8 @@ h3.related_title {
 }
 
 .rightbar .widget div , .rightbar .widget ul , .rightbar .widget form {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .widget div.clearfix {
@@ -5148,6 +5150,16 @@ input.disabled{
 
 
 /* media-queries */
+@font-face {
+    font-family:"MyKXFonts";
+    /* for ie */
+    src:url('./fonts/MyKXFonts.eot');
+    src:url('./fonts/MyKXFonts.eot#iefix') format('embedded-opentype'),
+    url('./fonts/MyKXFonts.woff') format('woff'),
+    /* for chrome firebox ... */
+    url('./fonts/MyKXFonts.ttf') format('truetype'),
+    url('./fonts/MyKXFonts.svg#webfont') format('svg');
+}
 
 @media only screen and (max-width:768px) {
 	.header-menu,.mate-cat,.mate-view,#drawer,.format-status .box:before,.leftbar,.slider p,.mate-com,.post .box-wrap:before,.member_login,.corner-qrcode,.related_title,.related_img,.mate-qrcode,.mate-sidebar,#breadcrumb,.commentlist>li:before , .home .format-aside .featured-image , .archive .format-aside .featured-image , .search .format-aside .featured-image,.home .post:after , .logo-subtitle{
