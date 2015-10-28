@@ -1,7 +1,7 @@
 # Teahouse-Wordpress-Theme
 Teahouse依然是免费维护更新，感谢依然使用Teahouse的用户们。
 
-演示：http://www.zhw-island.com/theme-teahouse
+演示：http://zhw-island.com/teahouse/
 
 作者：http://lazyhood.com
 
