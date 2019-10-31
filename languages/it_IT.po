@@ -1,226 +1,231 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Pocket\n"
+"Project-Id-Version: HTML5-Reset-WordPress-Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-29 12:19-0800\n"
-"PO-Revision-Date: 2019-10-31 09:20+0100\n"
-"Last-Translator: Rosi Gianluca\n"
-"Language-Team: Fratta\n"
-"Language: it_IT\n"
+"POT-Creation-Date: 2012-05-06 17:10+0100\n"
+"PO-Revision-Date: \n"
+"Language-Team: fxbenard <fxbenard@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _e;__\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: ..\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ../404.php:12
-msgid "404 - Page Not Found"
-msgstr "404 - Pagina non trovata"
+#: 404.php:3
+msgid "Error 404 - Page Not Found"
+msgstr "Error 404 - Pagina non trovata"
 
-#: ../404.php:17
-msgid ""
-"Sorry, but the page you are looking for has moved or no longer exists. "
-"Please use the search or the archives below to try and locate the page you "
-"were looking for."
-msgstr ""
-"Ci dispiace ma la pagina che stai cercando non esiste più. Usa la funzione "
-"di ricerca qui sotto e riprova"
+#: archive.php:8
+msgid "Archive for the"
+msgstr "Archiva per"
 
-#: ../404.php:24 ../custom-archive.php:41
-msgid "Archive By Day"
-msgstr "Archivio per giorno"
-
-#: ../404.php:31 ../custom-archive.php:48
-msgid "Archive By Month"
-msgstr "Archivio per mese"
-
-#: ../404.php:38 ../custom-archive.php:55
-msgid "Archive By Year"
-msgstr "Archivio per anno"
-
-#: ../404.php:47 ../custom-archive.php:64
-msgid "Latest Posts"
-msgstr "Ultimi articoli"
-
-#: ../404.php:54 ../custom-archive.php:71
-msgid "Contributors"
-msgstr "Contributori"
-
-#: ../404.php:63 ../custom-archive.php:80
-msgid "Pages"
-msgstr "Pagine"
-
-#: ../404.php:70 ../custom-archive.php:87
-msgid "Categories"
-msgstr "Categorie"
-
-#: ../comments.php:20
-msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-"Questo articolo è protetto da password. Inserisci la password per vedere i "
-"commenti."
-
-#: ../comments.php:28
-msgid "Leave A Comment"
-msgstr "Commenta"
-
-#: ../comments.php:28 ../format-gallery.php:39 ../format-standard.php:51
-msgid "1 Comment"
-msgstr "1 commento"
-
-#: ../comments.php:28 ../format-gallery.php:39 ../format-standard.php:51
-msgid "% Comments"
-msgstr "% commenti"
-
-#: ../comments.php:38
-msgid "&larr; Older Comments"
-msgstr "&larr; Commenti più vecchi"
-
-#: ../comments.php:39
-msgid "Newer Comments &rarr;"
-msgstr "Nuovi commenti &rarr;"
-
-#: ../custom-archive.php:36 ../format-gallery.php:19 ../format-gallery.php:22
-#: ../format-standard.php:31 ../format-standard.php:34 ../format-status.php:15
-msgid "Read More"
-msgstr "Di più"
-
-#: ../customizer.php:24
-msgid "Fixed Options"
-msgstr "Opzioni fissate"
-
-#: ../customizer.php:33
-msgid "Logo Upload"
-msgstr "Carica logo"
-
-#: ../customizer.php:47
-msgid "Retina Logo"
-msgstr "Logo Retina"
-
-#: ../customizer.php:51 ../customizer.php:80
-msgid "Enabled"
-msgstr "Abilitato"
-
-#: ../customizer.php:52 ../customizer.php:81
-msgid "Disabled"
-msgstr "Disabilitato"
-
-#: ../customizer.php:62
-msgid "Link Color"
-msgstr "Colore collegamento"
-
-#: ../customizer.php:76
-msgid "Infinite Scrolling"
-msgstr "Scrolling infinito"
-
-#: ../customizer.php:91
-msgid "Custom CSS"
-msgstr "CSS personalizzato"
-
-#: ../format-gallery.php:34 ../format-standard.php:46
-msgid "Author"
-msgstr "Autore"
-
-#: ../format-gallery.php:35 ../format-standard.php:47
+#: archive.php:8
 msgid "Category"
 msgstr "Categoria"
 
-#: ../format-gallery.php:37 ../format-standard.php:49
-msgid "Tag"
-msgstr "Tag"
+#: archive.php:11
+msgid "Posts Tagged"
+msgstr "Articoli taggati"
 
-#: ../format-gallery.php:39 ../format-standard.php:51
-msgid "Comments"
-msgstr "Commenti"
+#: archive.php:14 archive.php:17 archive.php:20
+msgid "Archive for"
+msgstr "Archivio per"
 
-#: ../format-gallery.php:39 ../format-standard.php:51
-msgid "No Comments"
-msgstr "Nessun commento"
+#: archive.php:23
+msgid "Author Archive"
+msgstr "Archivio autore"
 
-#: ../format-quote.php:5
+#: archive.php:26
+msgid "Blog Archives"
+msgstr "Archivio blog"
+
+#: archive.php:52
+msgid "Nothing found"
+msgstr "Non è stato trovato nulla"
+
+#: comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Questo articolo è protetto da password. Inserisci la password per vedere i commenti"
+
+#: comments.php:15
+msgid "No Responses"
+msgstr "Nessuna risposta"
+
+#: comments.php:15
+msgid "One Response"
+msgstr "Una risposta"
+
+#: comments.php:15
+msgid "% Responses"
+msgstr "%s risposte"
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "Commanti disabilitati"
+
+#: comments.php:47
+msgid "Leave a Reply"
+msgstr "Rispondi"
+
+#: comments.php:47
 #, php-format
-msgid "Permalink to %s"
-msgstr "Link permanente a %s"
+msgid "Leave a Reply to %s"
+msgstr "Rispondi a %s"
 
-#: ../functions.php:56
-msgid "Main Menu"
-msgstr "Menù principale"
+#: comments.php:54
+msgid "You must be"
+msgstr "Devi essere"
 
-#: ../functions.php:57
-msgid "Custom Menu"
-msgstr "Menù personalizzato"
+#: comments.php:54
+msgid "logged in"
+msgstr "connesso"
 
-#: ../functions.php:157
-msgid "Sidebar"
-msgstr "Barra laterale"
+#: comments.php:54
+msgid "to post a comment"
+msgstr "per postare un commento"
 
-#: ../functions.php:158
-msgid "Widgets in this area will be shown in the sidebar."
-msgstr "I widgets in quest'area saranno visualizzati nella barra laterale."
+#: comments.php:61
+msgid "Logged in as"
+msgstr "Connesso come"
 
-#: ../functions.php:164
-msgid "Drawer"
-msgstr "Drawer"
+#: comments.php:61
+msgid "Log out"
+msgstr "Disconnetti"
 
-#: ../functions.php:165
-msgid "Widgets in this area will be shown in the drawer."
-msgstr "I widgets in quest'area saranno visualizzati nel drawer."
+#: comments.php:67
+msgid "Name"
+msgstr "Nome"
 
-#: ../functions.php:182
-#, php-format
-msgid "<cite class=\"fn\">%s</cite>"
+#: comments.php:72
+msgid "Mail (will not be published)"
+msgstr "Mail (non verrà pubblicata)"
+
+#: comments.php:77
+msgid "Website"
+msgstr "Sito web"
+
+#: comments.php:89
+msgid "Submit Comment"
+msgstr "Invia commento"
+
+#: functions.php:35
+msgid "Sidebar Widgets"
+msgstr "Widget barra laterale"
+
+#: functions.php:37
+msgid "These are widgets for the sidebar."
+msgstr "Questi widget sono per la barra laterale"
+
+#: header.php:44
+msgid "Tag Archive for &quot;"
+msgstr "Tag Archivio per &quot;"
+
+#: header.php:46
+msgid " Archive - "
+msgstr " Archivio - "
+
+#: header.php:48
+msgid "Search for &quot;"
+msgstr "Cerca per &quot;"
+
+#: header.php:52
+msgid "Not Found - "
+msgstr "Non trovato - "
+
+#: index.php:16
+msgid "Tags: "
+msgstr "Tag: "
+
+#: index.php:17
+msgid "Posted in"
+msgstr "Postato in"
+
+#: index.php:18
+msgid "No Comments &#187;"
+msgstr "Nessun Commento &#187;"
+
+#: index.php:18
+msgid "1 Comment &#187;"
+msgstr "1 Commento &#187;"
+
+#: index.php:18
+msgid "% Comments &#187;"
+msgstr "% Commento &#187;"
+
+#: index.php:29
+msgid "Not found."
+msgstr "Non trovato."
+
+#: page.php:15
+msgid "Pages: "
+msgstr "Pagine"
+
+#: page.php:19
+msgid "Edit this entry."
+msgstr "Modifica"
+
+#: search.php:5
+msgid "Search Results"
+msgstr "Risultati ricerca"
+
+#: search.php:31
+msgid "No posts found."
+msgstr "Nessun articolo trovato."
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "Cerca per:"
+
+#: searchform.php:6
+msgid "Search"
+msgstr "Cerca"
+
+#: sidebar.php:9
+msgid "Pages"
+msgstr "Pagine"
+
+#: sidebar.php:11
+msgid "Archives"
+msgstr "Archivi"
+
+#: sidebar.php:16
+msgid "Categories"
+msgstr "Categorie"
+
+#: sidebar.php:23
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:27
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr ""
 
-#: ../functions.php:184
-#, php-format
-msgid "%1$s - %2$s"
+#: sidebar.php:31
+msgid "Subscribe"
+msgstr "Iscriviti"
+
+#: sidebar.php:33
+msgid "Entries (RSS)"
 msgstr ""
 
-#: ../functions.php:184
-msgid "(Edit)"
-msgstr "(Modifica)"
+#: sidebar.php:34
+msgid "Comments (RSS)"
+msgstr "Commenti (RSS)"
 
-#: ../functions.php:198
-msgid "Your comment is awaiting moderation."
-msgstr "Il tuo commento è in atesa di approvazione."
+#: single.php:13
+msgid "Pages:"
+msgstr "Pagine:"
 
-#: ../functions.php:230
-#, php-format
-msgid "<a href=\"%1$s\">Hide Notice</a>"
-msgstr "a href=\"%1$s\">Nascondi notizia</a>"
+#: single.php:15
+msgid "Tags:"
+msgstr "Tags:"
 
-#: ../index.php:8
-msgid " "
-msgstr ""
-
-#: ../index.php:8
-msgid "Results for"
-msgstr "Risultati per"
-
-#: ../index.php:12
-msgid "Archive:"
-msgstr "Archivio:"
-
-#: ../index.php:47
-msgid "<i class=\"icon-arrow-left\"></i> Newer Posts"
-msgstr "<i class=\"icon-arrow-left\"></i> Nuovi articoli"
-
-#: ../index.php:48
-msgid "Older Posts <i class=\"icon-arrow-right\"></i>"
-msgstr "Articoli precedenti <i class=\"icon-arrow-right\"></i>"
-
-#: ../searchform.php:3
-msgid "Search..."
-msgstr "Cerca..."
-
-#: ../includes/updates/EDD_SL_Theme_Updater.php:54
-msgid ""
-"Updating this theme will lose any customizations you have made. 'Cancel' to "
-"stop, 'OK' to update."
-msgstr ""
-"Aggiornando questo tema perderai tutte le personalizzazioni fatte. Premi "
-"'Cancel' per fermare o 'OK' per aggiornare."
+#: single.php:21
+msgid "Edit this entry"
+msgstr "Modifica"
